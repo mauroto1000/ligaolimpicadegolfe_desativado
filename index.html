@@ -13,13 +13,13 @@
       --dark: #1e293b;
       --light: #f8fafc;
     }
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, var(--light), #e0f2fe);
@@ -30,7 +30,7 @@
       justify-content: center;
       padding: 20px;
     }
-    
+
     .container {
       width: 100%;
       max-width: 600px;
@@ -42,23 +42,23 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .logo-container {
       margin-bottom: 30px;
     }
-    
+
     .logo img {
       max-width: 200px;
       height: auto;
       margin: 0 auto;
     }
-    
+
     h1 {
       color: var(--primary-dark);
       margin-bottom: 30px;
       font-size: 28px;
     }
-    
+
     .new-address {
       font-size: 20px;
       font-weight: 600;
@@ -69,7 +69,7 @@
       border-radius: 8px;
       display: inline-block;
     }
-    
+
     .btn {
       display: inline-block;
       background: var(--primary);
@@ -82,13 +82,13 @@
       margin-top: 10px;
       box-shadow: 0 4px 6px rgba(37, 99, 235, 0.25);
     }
-    
+
     .btn:hover {
       background: var(--primary-dark);
       transform: translateY(-2px);
       box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
     }
-    
+
     .golf-ball {
       position: absolute;
       width: 120px;
@@ -98,41 +98,41 @@
       box-shadow: inset -10px -10px 20px rgba(0,0,0,0.1);
       opacity: 0.1;
     }
-    
+
     .ball-1 {
       top: -60px;
       left: -60px;
     }
-    
+
     .ball-2 {
       bottom: -40px;
       right: -40px;
     }
-    
+
     .divider {
       height: 2px;
       background: linear-gradient(to right, transparent, #e5e7eb, transparent);
       margin: 30px 0;
     }
-    
+
     .footer {
       color: #777;
       font-size: 14px;
     }
-    
+
     @media (max-width: 576px) {
       .container {
         padding: 30px 20px;
       }
-      
+
       h1 {
         font-size: 24px;
       }
-      
+
       .logo img {
         max-width: 150px;
       }
-      
+
       .new-address {
         font-size: 18px;
         padding: 10px;
@@ -144,28 +144,29 @@
   <div class="container">
     <div class="golf-ball ball-1"></div>
     <div class="golf-ball ball-2"></div>
-    
+
     <div class="logo-container">
       <div class="logo">
-        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Liga Olímpica de Golfe">
+        <img src="images/logo.png" alt="Logo Liga Olímpica de Golfe">
       </div>
     </div>
-    
+
     <h1>A Liga Olímpica de Golfe tem um novo endereço!</h1>
-    
+
     <div class="new-address">
       www.ligaolimpicadegolfe.com.br
     </div>
-    
+
     <a href="https://www.ligaolimpicadegolfe.com.br" class="btn">
       <i class="fas fa-external-link-alt mr-2"></i> Acessar novo site
     </a>
-    
+
     <div class="divider"></div>
-    
+
     <p class="footer">
       &copy; 2025 Liga Olímpica de Golfe. Todos os direitos reservados.
     </p>
   </div>
 </body>
 </html>
+
